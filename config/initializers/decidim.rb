@@ -395,9 +395,11 @@ Decidim.configure do |config|
 
   config.content_security_policies_extra = {
     "default-src" => ["*"],
-    "img-src" => ["*"],
+    "img-src" => ["*", "blob:", "data:"],
     "media-src" => ["*"],
-    "script-src" => ["*"],
+    "script-src" => ["*", "blob:"],
+    "worker-src" => ["*", "blob:"],
+    "child-src" => ["*", "blob:"],
     "style-src" => ["*"],
     "font-src" => ["*"],
     "frame-src" => ["*"],
@@ -501,6 +503,7 @@ Rails.application.config.i18n.default_locale = Decidim.default_locale
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
 
 require "decidim/map/provider/static_map/cfj_osm"
+require "decidim/map/provider/dynamic_map/geolonia"
 
 ## Set default OGP description length limit. It's used in Decidim::Blogs components
 Rails.application.config.default_blog_ogp_description_limit = ENV.fetch("DECIDIM_BLOG_OGP_DESCRIPTION_LIMIT", 150).to_i

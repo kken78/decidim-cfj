@@ -31,6 +31,8 @@
     "jsviews": "^1.0.15",
     "leaflet": "^1.9.4",
     "leaflet-tilelayer-here": "^2.0.1",
+    "maplibre-gl": "^4.7.1",
+    "@maplibre/maplibre-gl-leaflet": "^0.0.22",
     "leaflet.featuregroup.subgroup": "^1.0.2",
     "leaflet.markercluster": "^1.5.3",
     "picmo": "^5.8.5",

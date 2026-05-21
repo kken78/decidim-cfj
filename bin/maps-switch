@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Swap MAPS_* lines in .env using a profile under config/maps_profiles/.
+#
+# Usage:
+#   bin/maps-switch osm        # 元のOSM bright設定に戻す
+#   bin/maps-switch test       # CARTO Voyager(切替動作確認用)に切り替え
+#   bin/maps-switch geolonia   # Geoloniaプロファイル(Phase 2で追加)
+#
+# - .env のうち MAPS_ で始まる行のみを置換します。それ以外は触りません。
+# - 置換前に .env.bak を作成します(直前の状態を1世代だけ保持)。
+# - 切り替え後は docker compose restart app を実行してください。
+
+set -euo pipefail
+
+PROFILE="${1:-}"
+if [[ -z "${PROFILE}" ]]; then
+  echo "usage: bin/maps-switch <profile>"
+  echo "available profiles:"
+  ls -1 config/maps_profiles/ | sed 's/\.env$//; s/^/  /'
+  exit 1
+fi
+
+PROFILE_FILE="config/maps_profiles/${PROFILE}.env"
+if [[ ! -f "${PROFILE_FILE}" ]]; then
+  echo "error: profile not found: ${PROFILE_FILE}" >&2
+  exit 1
+fi
+
+if [[ ! -f .env ]]; then
+  echo "error: .env not found at project root" >&2
+  exit 1
+fi
+
+cp .env .env.bak
+echo "backup: .env -> .env.bak"
+
+# .env から既存の MAPS_ 行を除去し、プロファイルの内容を末尾に追記する。
+TMP="$(mktemp)"
+grep -v '^MAPS_' .env > "${TMP}" || true
+
+# 末尾改行を保証してから追記
+if [[ -s "${TMP}" ]] && [[ "$(tail -c 1 "${TMP}")" != "" ]]; then
+  printf '\n' >> "${TMP}"
+fi
+
+cat "${PROFILE_FILE}" >> "${TMP}"
+mv "${TMP}" .env
+
+echo "applied profile: ${PROFILE}"
+echo
+echo "current MAPS_* in .env:"
+grep '^MAPS_' .env | sed 's/^/  /'
+echo
+echo "next: docker compose restart app   (or:  docker compose up -d)"
