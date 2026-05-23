@@ -61,3 +61,6 @@ app/views/static/docs/*
 *.dump
 *.tgz
 storage.before-*
+
+# Local backups
+*.bak
