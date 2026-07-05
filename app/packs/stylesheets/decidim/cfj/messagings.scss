@@ -1,0 +1,4 @@
+/* All conversation routes contain "conversation" in their href; old class-based selectors no longer exist in the current markup. */
+a[href*="conversation"] {
+  display: none !important;
+}
