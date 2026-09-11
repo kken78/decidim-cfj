@@ -1,5 +1,79 @@
 # Change Log
 
+## 1.0.0 (2026-09-11)
+
+
+### Features
+
+* add break line ([2fc0ca2](https://github.com/kken78/decidim-cfj/commit/2fc0ca22b41da50ef964b177da4437188c4504dd))
+* add break line ([efc5a6d](https://github.com/kken78/decidim-cfj/commit/efc5a6d59078b7891adbddd682ad7f0a591a71dd))
+* add break line ([1d2f5e3](https://github.com/kken78/decidim-cfj/commit/1d2f5e3cc24d38fee0987d6da5901179e8b80dc0))
+* add break line ([5b852d8](https://github.com/kken78/decidim-cfj/commit/5b852d8a75e7a4613a629ce7a82f0c3ee505d701))
+* add cdk deploy ([027d21c](https://github.com/kken78/decidim-cfj/commit/027d21cdd876bd8523a13df89c7af81c8d7dd3bb))
+* add curl ([512c4c1](https://github.com/kken78/decidim-cfj/commit/512c4c1c47af992d192b37bb0404aadf0e65835a))
+* add geo cording osm ([72cfb20](https://github.com/kken78/decidim-cfj/commit/72cfb206603668000a7376fedc5eb46104b909b0))
+* add print css ([ce7477d](https://github.com/kken78/decidim-cfj/commit/ce7477d4c7510f935da178fa5626d7578ba787aa))
+* add puma_worker_killer ([3c35f0b](https://github.com/kken78/decidim-cfj/commit/3c35f0b3facffcee125eb5ea1dc1801601884924))
+* add puma_worker_killer config ([6b801a1](https://github.com/kken78/decidim-cfj/commit/6b801a1ae7cd0410a1708cf3e781ca12eca4f293))
+* add replace to null decidim_organization command ([ea559b3](https://github.com/kken78/decidim-cfj/commit/ea559b33afbf06eed69b3342125d000c551c1856))
+* add replace to null decidim_proposals command ([0037abe](https://github.com/kken78/decidim-cfj/commit/0037abee5c6f42fcc3b72c99bb971e2f072a2840))
+* add replace to null ParticipatoryProcess command ([64da281](https://github.com/kken78/decidim-cfj/commit/64da28192ff22fdd5f4639dc971116644d4b26e7))
+* add s3 amazon setting ([99504fb](https://github.com/kken78/decidim-cfj/commit/99504fb136d178fcc9d89dec2bd73eae5bb3c74d))
+* add s3 gem ([d62b3fe](https://github.com/kken78/decidim-cfj/commit/d62b3feeba30f165fa2723c30333d12f7d165eaf))
+* add slack env ([67895f7](https://github.com/kken78/decidim-cfj/commit/67895f72a3d11671c6aac68d99157a559474e8b5))
+* add support for heic format ([44aff59](https://github.com/kken78/decidim-cfj/commit/44aff59371a518b391e7f28a5ede8c1d9026f0f3))
+* add working_dir ([2b06cc2](https://github.com/kken78/decidim-cfj/commit/2b06cc26a81b69105325fa15f0f0df7fdf38a3a2))
+* apply new editor changes ([01bc7b2](https://github.com/kken78/decidim-cfj/commit/01bc7b2d4a5b0077f8c373e77b3ea0b2f747b9f0))
+* build_images workflow ([03a716c](https://github.com/kken78/decidim-cfj/commit/03a716cabe6acf6177fd2d1e578ad1bf052b3992))
+* create local docker nginx conf ([f76f4c4](https://github.com/kken78/decidim-cfj/commit/f76f4c4ef79f199ad2a9a6191c93b3fae18446bc))
+* create replace_to_null.rake ([dc20afa](https://github.com/kken78/decidim-cfj/commit/dc20afa73dbf1c0dd9e54ecf01289f6816f74e56))
+* fix [#399](https://github.com/kken78/decidim-cfj/issues/399) add html editor ([fd05ee7](https://github.com/kken78/decidim-cfj/commit/fd05ee7d5c84797188e59e87af9f34795795e82c))
+* fix awesome_admin.js loading point ([3ce097e](https://github.com/kken78/decidim-cfj/commit/3ce097eae8eefe28882076d2ddfa86968d301d4c))
+* fix yaml ([14ed588](https://github.com/kken78/decidim-cfj/commit/14ed5885b6986a34da9da3a66a08acbf04e09d2e))
+* remove build_image workflow ([44f2aae](https://github.com/kken78/decidim-cfj/commit/44f2aaed63fda44a78aa140853bbd8a716d8d9db))
+* update CHANGELOG.md ([348457c](https://github.com/kken78/decidim-cfj/commit/348457cb3e91744b96b9b6349def0ad61ee0f1da))
+* update CHANGELOG.md ([c177955](https://github.com/kken78/decidim-cfj/commit/c1779550b69cdc543d84913c53ccc675dce5bdc5))
+* update decidim_user_extension ([50a53dd](https://github.com/kken78/decidim-cfj/commit/50a53dd62e30a8c64ca46ed70a7101226c5e93e7))
+* update Dockerfile ([62628c2](https://github.com/kken78/decidim-cfj/commit/62628c2c093b8f38020dbc1d4e4f1c56a1620042))
+* update production v0252 ([87fdf66](https://github.com/kken78/decidim-cfj/commit/87fdf668e0c93332433e597564085117876c9315))
+* update term-customizer ([9aebf7f](https://github.com/kken78/decidim-cfj/commit/9aebf7fb9cc8b30db4ae9a380aea442447f7cd98))
+* update term-customizer branch ([4ea0eb0](https://github.com/kken78/decidim-cfj/commit/4ea0eb0a91e1f528970e65be09a71ec18d5258fc))
+* use build-push-action ([7d86ed5](https://github.com/kken78/decidim-cfj/commit/7d86ed5ba0b57614faddd798e3bbc14ce5e22a2a))
+
+
+### Bug Fixes
+
+* [#401](https://github.com/kken78/decidim-cfj/issues/401) remove visibility column ([1a2084b](https://github.com/kken78/decidim-cfj/commit/1a2084bc0d0254576f5ac80ee58b600468573646))
+* 304; ignore seeds of DecidimAwesome ([be7d1fc](https://github.com/kken78/decidim-cfj/commit/be7d1fc5a60785084632db1aed99b991a8ab8ad2))
+* 446; set `max_complexity` after initializers ([4adbf24](https://github.com/kken78/decidim-cfj/commit/4adbf24f04480826d543fd07c95dc667ecfff5fb))
+* allow MIME types of HEIF families ([23710c4](https://github.com/kken78/decidim-cfj/commit/23710c444db2d50435004ba0b520a529742648e9))
+* allow multiple format of HEIF ([184c0b1](https://github.com/kken78/decidim-cfj/commit/184c0b1b907389cd51fa4f0504de3a08f1900b38))
+* allow options in `preview` ([b4c3d57](https://github.com/kken78/decidim-cfj/commit/b4c3d576b668850686958e895c736ed7f40baac6))
+* build_images workflow ([a0de095](https://github.com/kken78/decidim-cfj/commit/a0de09577a04bf527bb67c0f7bc100d5e79fc0bd))
+* build_images workflow ([66ce7e0](https://github.com/kken78/decidim-cfj/commit/66ce7e0f4c6b6adbe6151a81b3b71ff389c592b5))
+* decidim.scss ([ad27b5a](https://github.com/kken78/decidim-cfj/commit/ad27b5a84603b837841cc772df11c249a33035c6))
+* deploy.yml version ([5b7fd5d](https://github.com/kken78/decidim-cfj/commit/5b7fd5d451f0fae8fff7ef24c7424b70ef18570f))
+* deployments nginx conf ([cad7aba](https://github.com/kken78/decidim-cfj/commit/cad7abafdc7e52d1fa5dbf1e9bb52f4166bfeddf))
+* do not display changeset if it is too large ([0ba0ce5](https://github.com/kken78/decidim-cfj/commit/0ba0ce5373a27ffb91e2862b9ae1a2dd3c4972ef))
+* docker file copy point ([652ca2b](https://github.com/kken78/decidim-cfj/commit/652ca2baa5802d6a3b6b332298f7ba48d0a2f659))
+* docker ignore ([17a6ff7](https://github.com/kken78/decidim-cfj/commit/17a6ff7180179355f4b725e470717a958a1d4f55))
+* footer layout bug ([31113e4](https://github.com/kken78/decidim-cfj/commit/31113e4d1b06a1f8362622c89bbd2b76d492b34f))
+* force to use ImageProcessing ([c1ce6e8](https://github.com/kken78/decidim-cfj/commit/c1ce6e84b8f527bf6b5f5258dcfac585d148aac0))
+* lint ([0f16659](https://github.com/kken78/decidim-cfj/commit/0f166592f0c2efda0244443105f176efb3121040))
+* nginx conf ([34ce786](https://github.com/kken78/decidim-cfj/commit/34ce78617ce3c160fdb1d20d5a95d4fe77ae8070))
+* remove mimemagic ([e2baeaf](https://github.com/kken78/decidim-cfj/commit/e2baeaf0b4ee03bbaf13beb3c9402f3dd389b300))
+* remove unused yml ([1cee657](https://github.com/kken78/decidim-cfj/commit/1cee657268aba99ff8c25e816957125d01e9f2ad))
+* rubocop ([ab18105](https://github.com/kken78/decidim-cfj/commit/ab18105a14953a9542e6ae070962bfa0ddc14e3f))
+* some bug ([e042f4d](https://github.com/kken78/decidim-cfj/commit/e042f4dcce085de750c42b6809722f5d69a84470))
+* use arg id & timezone ([3025fcb](https://github.com/kken78/decidim-cfj/commit/3025fcb92e8655ceac6f6887258b4f0a07b5d683))
+* user upload image error ([36e9c63](https://github.com/kken78/decidim-cfj/commit/36e9c63c10cd85c9ee0e952f0991fb4c03f134b2))
+* yml ([7129de0](https://github.com/kken78/decidim-cfj/commit/7129de0a01af2dd2b1002f8be7e3c56f164f03c6))
+
+
+### Reverts
+
+* 210; Fixed in v0.25.5 ([274f858](https://github.com/kken78/decidim-cfj/commit/274f858168423808afba2ffaca41e420a321bf59))
+
 ## [v0.25.2-2022-11-08](https://github.com/codeforjapan/decidim-cfj/releases/tag/v0.25.2-2022-11-08)
 
 ### Added
